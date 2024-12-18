@@ -1,0 +1,317 @@
+#include <stdio.h>
+#include "macera.h"
+#include "features.h"
+#include "haydut.h"
+#include "ayi.h"
+
+int choice;
+
+void ormandaGez(){
+    printf("Ormanda gezmek saglik icin ve sifali bitkiler bulmak icin iyi bir tercihdir...\n");
+    ayiylaKarsilasma();
+}
+
+void magarayaGit(){
+    printf("Magaraya gidiliyor...\nMagaranin ici tehlikeli olabilir, becerilerine ihtiyacimiz var. Hala gitmek istediðinden emin misin ? \n");
+    printf("1 - Evet\n2 - Hayir\n");
+    printf("Secimini Yap : ");
+    scanf("%d",&choice);
+
+    if(choice == 1){
+        printf("Guclu ve zor kararlari ancak senin gibi kahramanlar alabilir, gucune ve zekana guveniyorum...\n");
+        setFeatureValueQuality(&TOK, TOK - 10);
+        printf("Magaraya girmek isine yaradi, Mucevherler gozunun onundeee :))\n");
+        setFeatureValueQuality(&ALTIN, ALTIN + 5);
+        setFeatureValueQuality(&PUAN, PUAN + 5);
+        setFeatureValueQuality(&TOK, TOK - 5);
+        setFeatureValueQuality(&SANS, SANS + 5);
+        setFeatureValueSkills(&TOPLAYICILIK, TOPLAYICILIK + 3);
+        setFeatureValueSkills(&KARIZMA, KARIZMA + 3);
+    }
+    else if(choice == 2){
+        printf("Magaranin agzina gelmisken geri donmek yakismadi :((\n");
+        setFeatureValueSkills(&KARIZMA, KARIZMA - 2);
+        setFeatureValueQuality(&TOK, TOK - 10);
+        setFeatureValueQuality(&PUAN, PUAN + 5);
+    }
+    else{
+        printf("Yanlis deger girdiniz, tekrar deneyiniz...\n");
+        getchar();
+        system("cls");
+    }
+
+}
+
+void avlan(){
+    int aticilik = SANS / 2;;
+    if(aticilik >= 25){
+        printf("\nAva giderken avlananlardan misin yoksa avlayanlardan mi ??\n");
+        printf("1 - Tavsan\n2 - Ceylan\n3 - Domuz\n");
+        printf("3 secenek var hangisi sana daha cazip geliyor : ");
+        scanf("%d",&choice);
+
+        if(choice == 1){
+            AVCILIK += 5;
+            TOPLAYICILIK += 5;
+            setFeatureValueSkills(&KARIZMA, KARIZMA + 2);
+            setFeatureValueQuality(&TOK,TOK + 5);
+            setFeatureValueQuality(&PUAN, PUAN + 5);
+            printf("Aksama ortaya guzel bir tavsan iyi gidecek :))\n");
+        }
+        else if(choice == 2){
+            AVCILIK += 8;
+            TOPLAYICILIK += 8;
+            setFeatureValueSkills(&KARIZMA, KARIZMA + 2);
+            setFeatureValueQuality(&TOK,TOK + 10);
+            setFeatureValueQuality(&PUAN, PUAN + 10);
+            printf("Agzinin tadini biliyorsun :)\n");
+        }
+        else if(choice == 3){
+            setFeatureValueSkills(&AVCILIK, AVCILIK + 2);
+            setFeatureValueSkills(&TOPLAYICILIK, TOPLAYICILIK + 2);
+            setFeatureValueQuality(&TOK,TOK + 10);
+            setFeatureValueQuality(&PUAN, PUAN + 10);
+            setFeatureValueSkills(&KARIZMA, KARIZMA + 3);
+            printf("Temiz bir domuz iyi gider...\n");
+        }
+        else{
+            printf("Digerleri sagliksiz bence bu hayvanlari avlayin...\n");
+            getchar();
+        }
+    }
+    else{
+        printf("\nBu durumda avlanman cok riskli. Daha dogru durust silah bile kullanamiyorsun. Oncelikle avciligini gelistir...\n");
+        printf("1 - Koy meydanina don ve antrenman yap\n");
+        printf("2 - Silahini, zirhini yukseltmek icin demirciye git\n");
+    }
+
+}
+
+void vadiyeGit(){
+    printf("Kayaliklar dolu bir vadide her sey olabilir kasif, tedbirini al !!!\n");
+    SANS = TOPLAYICILIK * 5 / 100;
+
+    if(SANS >= 5 / 10){
+        printf("Magarayi sen de gordun mu, gitmek ister misin (1 => Evet, 2 => Hayir)\n");
+        printf("Secimini Yap : ");
+        scanf("%d",&choice);
+
+        if(choice == 1){
+            magarayaGit();
+        }
+        else if(choice == 2){
+            printf("Biraz daha kayaliklarda gezinmek bir seyler bulmani saglayabilir..\nO da neee !!!\n");
+            printf("Kayaliklarin arasinda degerli tas bulduunn !!!\n");
+            setFeatureValueQuality(&ALTIN, ALTIN + 5);
+            setFeatureValueQuality(&PUAN, PUAN + 10);
+            setFeatureValueQuality(&TOK, TOK - 10);
+            setFeatureValueSkills(&TOPLAYICILIK, TOPLAYICILIK + 3);
+            setFeatureValueSkills(&KARIZMA, KARIZMA + 2);
+        }
+        else{
+            printf("Boyle bir secenegimiz bulunmamaktadir, tekrar deneyiniz...\n");
+            getchar();
+            system("cls");
+        }
+
+    }
+    else{
+        printf("Kayaliklarda yurumek tehlikeli olabilir, lutfen daha dikkatli oll !!!\n");
+        setFeatureValueQuality(&TOK, TOK - 10);
+        setFeatureValueSkills(&KARIZMA, KARIZMA + 1);
+    }
+
+}
+
+void sifaliBitkiTopla(){
+    SANS = (TOPLAYICILIK * 4) / 100;
+    if(SANS >= 5/10){
+        setFeatureValueQuality(&PUAN, PUAN + 5);
+        setFeatureValueQuality(&CAN,CAN + 5);
+        setFeatureValueQuality(&TOK,TOK + 5);
+        printf("Bugun iyi gunundesin galiba. Sifali bitkiyi bulmak herkese nasip olmaz.\n");
+    }
+    else{
+        printf("Bi baska zamana sana da nasip olur sifali bitki uzme kendini :((\n");
+        setFeatureValueQuality(&TOK,TOK - 5);
+    }
+}
+
+void turSonucu(int *oyuncu_kazandi, int *haydut_kazandi) {
+    int kazanan = rand() % 2 + 1;
+    if (kazanan == 1) {
+        printf("Kazandin. Tebrikler !!! Tum ganimet senin.\n\n");
+        printf(" ##  ##   ####   ######   ####   ##  ##  #####   ######  ##  ## \n");
+        printf(" ## ##   ##  ##     ##   ##  ##  ### ##  ##  ##    ##    ### ## \n");
+        printf(" ####    ######    ##    ######  ## ###  ##  ##    ##    ## ### \n");
+        printf(" ## ##   ##  ##   ##     ##  ##  ##  ##  ##  ##    ##    ##  ## \n");
+        printf(" ##  ##  ##  ##  ######  ##  ##  ##  ##  #####   ######  ##  ## \n\n");
+        setFeatureValueQuality(&ALTIN, ALTIN + 10);
+        setFeatureValueQuality(&PUAN, PUAN + 5);
+        setFeatureValueSkills(&GUC, GUC + 3);
+        setFeatureValueSkills(&CEVIKLIK, CEVIKLIK + 5);
+        setFeatureValueSkills(&DAYANIKLILIK, DAYANIKLILIK + 5);
+        HAYDUT_CAN -= 20;
+        setFeatureValueSkills(&KARIZMA, KARIZMA + 2);
+        setFeatureValueQuality(&TOK,TOK - 5);
+        setFeatureValueSkills(&TOPLAYICILIK, TOPLAYICILIK + 5);
+        HAYDUT_CEVIKLIK -= 10;
+        HAYDUT_DAYANIKLILIK -= 10;
+        (*oyuncu_kazandi)++;
+    } else {
+        printf("Hahahaha. Sadece bu kadar misin zavalli !!!\n\n");
+        printf("  ####   ##      #####   ##  ##  ##  ## \n");
+        printf(" ##  ##  ##      ##  ##  ##  ##  ### ## \n");
+        printf(" ##  ##  ##      ##  ##  ##  ##  ## ### \n");
+        printf(" ##  ##  ##      ##  ##  ##  ##  ##  ## \n");
+        printf("  ####   ######  #####   ######  ##  ## \n");
+        setFeatureValueQuality(&PUAN, PUAN - PUAN);
+        setFeatureValueSkills(&ALTIN, ALTIN - ALTIN);
+        setFeatureValueSkills(&GUC, GUC - GUC);
+        setFeatureValueSkills(&CEVIKLIK, CEVIKLIK - CEVIKLIK);
+        setFeatureValueSkills(&DAYANIKLILIK, DAYANIKLILIK - DAYANIKLILIK);
+        HAYDUT_CAN += 10;
+        HAYDUT_CEVIKLIK += 10;
+        HAYDUT_DAYANIKLILIK += 10;
+        (*haydut_kazandi)++;
+    }
+}
+
+void kesfeCik(){
+    srand(time(NULL));
+    printf("1 - Kolay Kesif\n");
+    printf("2 - Orta Kesif\n");
+    printf("3 - Zor Kesif\n");
+    printf("Seciminizi yapiniz : ");
+    scanf("%d", &choice);
+
+    if (choice == 1){
+        int sayi = rand() % 9;
+        printf("%s\n",haydut_bilgi_yazi[sayi]);
+
+        showEasyHaydutFeature();
+
+        savas();
+
+    }
+
+    else if (choice == 2){
+        int sayi = rand() % 9;
+        printf("%s\n",haydut_bilgi_yazi[sayi]);
+
+        showMediumHaydutFeature();
+
+        savas();
+    }
+    else if (choice == 3){
+
+        int sayi = rand() % 9;
+        printf("%s\n",haydut_bilgi_yazi[sayi]);
+
+        showHardHaydutFeature();
+
+        savas();
+
+        /*
+        if (choice == 2) {
+            printf("Savas alanindan kactin! Hayatta kalmayi basardin, ama ganimeti kaybettin.\n");
+            setFeatureValueSkills(&KARIZMA, KARIZMA - 1);
+        }
+        else if (choice == 1) {
+            printf("%s\n", haydut_tehdit_yazi[rand() % 8]);
+            savas();
+        }
+        else{
+            printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+            getchar();
+            system("cls");
+        }*/
+
+    }
+    else{
+        printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+        getchar();
+        system("cls");
+    }
+
+}
+
+void savas() {
+    while (CAN > 0 && HAYDUT_CAN > 0) {
+        int oyuncu_kazandi = 0, haydut_kazandi = 0;
+
+        for (int tur = 1; tur <= 3; tur++) {
+            if (CAN <= 0 || HAYDUT_CAN <= 0)
+                break;
+            else {
+                printf("\n***** %d. Tur *****\n", tur);
+                turSonucu(&oyuncu_kazandi, &haydut_kazandi);
+            }
+        }
+        if (oyuncu_kazandi < haydut_kazandi) {
+            printf("\nTebrikler! Savasi kazandin.\n");
+            /*
+            HAYDUT_CAN = 0;
+            HAYDUT_CEVIKLIK = 0;
+            HAYDUT_DAYANIKLILIK = 0;
+            */
+        }
+        else if (haydut_kazandi > oyuncu_kazandi) {
+            printf("\nHaydut savasi kazandi!OLDUN!\n");
+            /*
+            setFeatureValueQuality(&CAN, CAN - CAN);
+            setFeatureValueSkills(&CEVIKLIK, CEVIKLIK - CEVIKLIK);
+            setFeatureValueSkills(&DAYANIKLILIK, DAYANIKLILIK - DAYANIKLILIK);
+            setFeatureValueQuality(&ALTIN, ALTIN - ALTIN);
+            setFeatureValueSkills(&GUC, GUC - GUC);
+            setFeatureValueSkills(&PUAN, PUAN - PUAN);
+            setFeatureValueQuality(&TOK, TOK - TOK);
+            setFeatureValueSkills(&AVCILIK, AVCILIK - AVCILIK);
+            setFeatureValueSkills(&TOPLAYICILIK, TOPLAYICILIK - TOPLAYICILIK);
+            showQualification();
+            showSkills();
+            */
+        }
+        printf("Oyuncu Can: %d, Haydut Can: %d\n", CAN, HAYDUT_CAN);
+    }
+}
+
+void maceraciMenu(){
+    printf("1 - Ormanda Gez (Kolay Gorev)\n");
+    printf("2 - Magaraya Git (Orta Gorev)\n");
+    printf("3 - Avlan\n");
+    printf("4 - Vadiye Git (Zor Gorev)\n");
+    printf("5 - Sifali Bitki Topla\n");
+    printf("6 - Kesfe Cik\n");
+    printf("7 - Koy Meydanina Don\n");
+    printf("Seciminizi yapiniz : ");
+    scanf("%d", &choice);
+
+    if(choice == 1){
+        ormandaGez();
+    }
+    else if(choice == 2){
+        magarayaGit();
+    }
+    else if(choice == 3){
+        avlan();
+    }
+    else if(choice == 4){
+        vadiyeGit();
+    }
+    else if(choice == 5){
+        sifaliBitkiTopla();
+    }
+    else if(choice == 6){
+        kesfeCik();
+    }
+    else if(choice == 7){
+        printf("Koy meydanina donuluyor...\n");
+        system("cls");
+    }
+    else{
+        printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+        getchar();
+        system("cls");
+    }
+}

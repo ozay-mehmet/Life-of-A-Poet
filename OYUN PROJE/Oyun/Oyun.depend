@@ -1,0 +1,363 @@
+# depslib dependency file v1.0
+1734512762 source:d:\onedrive\masaüstü\oyun\features.c
+	<stdio.h>
+	"features.h"
+
+1734511273 d:\onedrive\masaüstü\oyun\features.h
+
+1734512841 source:d:\onedrive\masaüstü\oyun\han.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"features.h"
+	"han.h"
+	<time.h>
+
+1734367731 d:\onedrive\masaüstü\oyun\han.h
+
+1734510412 source:d:\onedrive\masaüstü\oyun\kamp.c
+	<stdio.h>
+	<stdlib.h>
+	"kamp.h"
+	"features.h"
+
+1734511014 source:d:\onedrive\masaüstü\oyun\macera.c
+	<stdio.h>
+	"macera.h"
+	"features.h"
+	"haydut.h"
+	"ayi.h"
+
+1734464323 d:\onedrive\masaüstü\oyun\macera.h
+
+1734382378 d:\onedrive\masaüstü\oyun\haydut.h
+
+1734512046 source:d:\onedrive\masaüstü\oyun\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1734512380 source:d:\onedrive\masaüstü\oyun\main.c
+	<stdio.h>
+	<unistd.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"ayi.h"
+	"level.h"
+	"yoldas.h"
+	"puan.h"
+	"features.h"
+	"menu.h"
+	"kamp.h"
+	"han.h"
+	"sifahane.h"
+	"macera.h"
+	"haydut.h"
+
+1734380714 d:\onedrive\masaüstü\oyun\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1734465766 d:\onedrive\masaüstü\oyun\kamp.c
+	<stdio.h>
+	<stdlib.h>
+	"Includes\kamp.h"
+
+1734503453 d:\onedrive\masaüstü\oyun\sifahane.h
+
+1734510898 source:d:\onedrive\masaüstü\oyun\haydut.c
+	"haydut.h"
+	<stdlib.h>
+
+1734380759 d:\onedrive\masaüstü\oyun\menu.h
+
+1734503505 source:d:\onedrive\masaüstü\oyun\sifahane.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sifahane.h"
+	<time.h>
+	"features.h"
+
+1734503071 source:d:\onedrive\masaüstü\oyun\ayi.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1734503114 source:d:\onedrive\masaüstü\oyun\yoldas.c
+	<stdio.h>
+	<stdlib.h>
+
+1734503105 d:\onedrive\masaüstü\oyun\yoldas.h
+
+1734502719 source:d:\onedrive\masaüstü\oyun\puan.c
+	<stdio.h>
+	"features.h"
+	"puan.h"
+	"yoldas.h"
+
+1734465214 d:\onedrive\masaüstü\oyun\puan.h
+
+1734502707 source:d:\onedrive\masaüstü\oyun\level.c
+	<stdio.h>
+	<stdlib.h>
+	"puan.h"
+
+1734465537 d:\onedrive\masaüstü\oyun\kamp.h
+
+1734465537 d:\onedrive\masaüstü\oyun\includes\kamp.h
+
+1734429249 d:\onedrive\masaüstü\oyun\includes\features.h
+
+1734367731 d:\onedrive\masaüstü\oyun\includes\han.h
+
+1734382378 d:\onedrive\masaüstü\oyun\includes\haydut.h
+
+1734465214 d:\onedrive\masaüstü\oyun\includes\puan.h
+
+1734464323 d:\onedrive\masaüstü\oyun\includes\macera.h
+
+1734380759 d:\onedrive\masaüstü\oyun\includes\menu.h
+
+1734367779 d:\onedrive\masaüstü\oyun\includes\sifahane.h
+
+1734501972 d:\onedrive\masaüstü\oyun\includes\yoldas.h
+
+1734503134 source:d:\onedrive\masaüstü\oyun\yoldasmenu.c
+	<stdio.h>
+	<stdlib.h>
+	"yoldas.h"
+
+1734503257 d:\onedrive\masaüstü\oyun\ayi.h
+
+1734465428 d:\onedrive\masaüstü\oyun\level.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\ayi.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\features.c
+	<stdio.h>
+	"features.h"
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\features.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\han.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"features.h"
+	"han.h"
+	<time.h>
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\han.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\haydut.c
+	"haydut.h"
+	<stdlib.h>
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\haydut.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\kamp.c
+	<stdio.h>
+	<stdlib.h>
+	"kamp.h"
+	"features.h"
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\kamp.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\level.c
+	<stdio.h>
+	<stdlib.h>
+	"puan.h"
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\puan.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\macera.c
+	<stdio.h>
+	"macera.h"
+	"features.h"
+	"haydut.h"
+	"ayi.h"
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\macera.h
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\ayi.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\main.c
+	<stdio.h>
+	<unistd.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"ayi.h"
+	"level.h"
+	"yoldas.h"
+	"puan.h"
+	"features.h"
+	"menu.h"
+	"kamp.h"
+	"han.h"
+	"sifahane.h"
+	"macera.h"
+	"haydut.h"
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\level.h
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\yoldas.h
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\menu.h
+
+1734522419 c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\sifahane.h
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\puan.c
+	<stdio.h>
+	"features.h"
+	"puan.h"
+	"yoldas.h"
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\sifahane.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sifahane.h"
+	<time.h>
+	"features.h"
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\yoldas.c
+	<stdio.h>
+	<stdlib.h>
+
+1734522419 source:c:\users\enes\desktop\life-of-a-poet-mehmet\oyun\yoldasmenu.c
+	<stdio.h>
+	<stdlib.h>
+	"yoldas.h"
+
+1734522831 source:c:\users\enes\desktop\oyun proje\oyun\ayi.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+
+1734548319 source:c:\users\enes\desktop\oyun proje\oyun\features.c
+	<stdio.h>
+	"features.h"
+
+1734523969 c:\users\enes\desktop\oyun proje\oyun\features.h
+
+1734548836 source:c:\users\enes\desktop\oyun proje\oyun\han.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"features.h"
+	"han.h"
+	"puan.h"
+	<time.h>
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\han.h
+
+1734523709 source:c:\users\enes\desktop\oyun proje\oyun\haydut.c
+	<stdlib.h>
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\haydut.h
+
+1734534883 source:c:\users\enes\desktop\oyun proje\oyun\kamp.c
+	<stdio.h>
+	<stdlib.h>
+	"kamp.h"
+	"features.h"
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\kamp.h
+
+1734522419 source:c:\users\enes\desktop\oyun proje\oyun\level.c
+	<stdio.h>
+	<stdlib.h>
+	"puan.h"
+
+1734524236 c:\users\enes\desktop\oyun proje\oyun\puan.h
+
+1734526150 source:c:\users\enes\desktop\oyun proje\oyun\macera.c
+	<stdio.h>
+	"macera.h"
+	"features.h"
+	"haydut.h"
+	"ayi.h"
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\macera.h
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\ayi.h
+
+1734548904 source:c:\users\enes\desktop\oyun proje\oyun\main.c
+	<stdio.h>
+	<unistd.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"ayi.h"
+	"level.h"
+	"yoldas.h"
+	"puan.h"
+	"features.h"
+	"kamp.h"
+	"han.h"
+	"sifahane.h"
+	"macera.h"
+	"haydut.h"
+	"nitelik_beceri.h"
+
+1734543898 c:\users\enes\desktop\oyun proje\oyun\level.h
+
+1734524774 c:\users\enes\desktop\oyun proje\oyun\yoldas.h
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\menu.h
+
+1734522419 c:\users\enes\desktop\oyun proje\oyun\sifahane.h
+
+1734523749 source:c:\users\enes\desktop\oyun proje\oyun\menu.c
+	<stdio.h>
+	<stdlib.h>
+
+1734526386 source:c:\users\enes\desktop\oyun proje\oyun\puan.c
+	<stdio.h>
+	"features.h"
+	"yoldas.h"
+	"puan.h"
+
+1734546976 source:c:\users\enes\desktop\oyun proje\oyun\sifahane.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sifahane.h"
+	<time.h>
+	"features.h"
+
+1734524774 source:c:\users\enes\desktop\oyun proje\oyun\yoldas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1734522419 source:c:\users\enes\desktop\oyun proje\oyun\yoldasmenu.c
+	<stdio.h>
+	<stdlib.h>
+	"yoldas.h"
+
+1734548299 source:c:\users\enes\desktop\oyun proje\oyun\nitelik_beceri.c
+	<stdio.h>
+	"features.h"
+
+1734526765 c:\users\enes\desktop\oyun proje\oyun\nitelik_beceri.h
+

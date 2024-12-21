@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="features.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="834" topLine="10" />
+		</Cursor>
+	</File>
+	<File name="level.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="249" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="degerYazdir.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="349" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="sifahane.c" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2873" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="puan.c" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="334" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="macera.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="359" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="features.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1633" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="97" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="level.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="132" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="yoldas.c" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="695" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="kamp.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="155" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="yoldasMenu.c" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1733" topLine="53" />
+		</Cursor>
+	</File>
+	<File name="kamp.c" open="1" top="1" tabpos="12" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2743" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5705" topLine="145" />
+		</Cursor>
+	</File>
+	<File name="haydut.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10247" topLine="355" />
+		</Cursor>
+	</File>
+	<File name="han.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10946" topLine="322" />
+		</Cursor>
+	</File>
+	<File name="yoldas.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="203" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="puan.h" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="209" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ayi.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="82" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ayi.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5419" topLine="163" />
+		</Cursor>
+	</File>
+	<File name="degerYazdir.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="119" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="yoldasMenu.h" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="108" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="menu.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="940" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="haydut.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="590" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="han.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="123" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="macera.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14263" topLine="510" />
+		</Cursor>
+	</File>
+	<File name="sifahane.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="141" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

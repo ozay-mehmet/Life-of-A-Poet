@@ -7,7 +7,7 @@ int MIN_FEATURE_VALUE_QUALITY = 0;
 int MAX_FEATURE_VALUE_SKILLS = 25;
 int MIN_FEATURE_VALUE_SKILLS = 0;
 
-int SEVIYE = 1;
+int SEVIYE = 2;
 
 int UYKU = 100;
 int PUAN = 0;
@@ -18,7 +18,7 @@ int MUTLULUK = 100;
 int SAGLIK = 100;
 int ALTIN = 10;
 
-float SANS = 50;
+float SANS = 50.0;
 int GUC = 3;
 int CEVIKLIK = 3;
 int DAYANIKLILIK = 3;

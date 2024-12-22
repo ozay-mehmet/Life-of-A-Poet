@@ -24,12 +24,12 @@
 
 1734800579 c:\users\enes\desktop\proje\oyun\han.h
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\features.c
+1734817212 source:c:\users\enes\desktop\proje\oyun\features.c
 	<stdio.h>
 	<string.h>
 	"features.h"
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\han.c
+1734820585 source:c:\users\enes\desktop\proje\oyun\han.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -43,7 +43,7 @@
 
 1734800983 c:\users\enes\desktop\proje\oyun\puan.h
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\haydut.c
+1734824061 source:c:\users\enes\desktop\proje\oyun\haydut.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
@@ -58,7 +58,7 @@
 
 1734800983 c:\users\enes\desktop\proje\oyun\macera.h
 
-1734801698 source:c:\users\enes\desktop\proje\oyun\kamp.c
+1734818941 source:c:\users\enes\desktop\proje\oyun\kamp.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
@@ -74,7 +74,7 @@
 	<stdlib.h>
 	"puan.h"
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\macera.c
+1734825116 source:c:\users\enes\desktop\proje\oyun\macera.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -88,7 +88,7 @@
 
 1734800983 c:\users\enes\desktop\proje\oyun\ayi.h
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\main.c
+1734823020 source:c:\users\enes\desktop\proje\oyun\main.c
 	<stdio.h>
 	<unistd.h>
 	<conio.h>
@@ -123,7 +123,7 @@
 	"features.h"
 	"yoldas.h"
 
-1734800983 source:c:\users\enes\desktop\proje\oyun\sifahane.c
+1734819806 source:c:\users\enes\desktop\proje\oyun\sifahane.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>

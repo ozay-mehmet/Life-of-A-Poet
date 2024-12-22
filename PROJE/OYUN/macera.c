@@ -9,7 +9,7 @@
 #include "menu.h"
 #include "degerYazdir.h"
 
-int choice;
+
 
 void ormandaGez(){
     system("cls");
@@ -19,6 +19,7 @@ void ormandaGez(){
 }
 
 void magarayaGit(){
+    int choice;
     system("cls");
 
     printf("Magaraya gidiliyor...\n");
@@ -103,9 +104,7 @@ void magarayaGit(){
     break;
 
     }else{
-    system("cls");
-
-    printf("Yanlis deger girdiniz, tekrar deneyiniz...\n");
+    printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRINIZ.\n");
     getchar();
     sleep(1);
     system("cls");
@@ -114,6 +113,7 @@ void magarayaGit(){
 }
 
 void avlan(){
+    int choice;
     int aticilik = SANS / 2;
     system("cls");
     if(aticilik >= 25){
@@ -191,7 +191,7 @@ void avlan(){
         degerYazdir("TOPLAYICILIK",6,TOPLAYICILIK);
         sleep(1);
 
-        printf("Koy meydanina donuluyor...");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         break;
@@ -213,7 +213,7 @@ void avlan(){
     }else{
     printf("\nBu durumda avlanman cok riskli. Daha dogru durust silah bile kullanamiyorsun. Oncelikle avciligini gelistir...\n");
     sleep(1);
-    printf("Koy meydanina donuluyor...");
+    printf("Koy meydanina donuluyor...\n");
     sleep(1);
     showSkillsAndQualification();
     }
@@ -221,15 +221,18 @@ void avlan(){
 }
 
 void vadiyeGit(){
+    int choice;
     system("cls");
 
     printf("Kayaliklar dolu bir vadide her sey olabilir kasif, tedbirini al !!!\n");
     SANS = TOPLAYICILIK * 5 / 100;
-    sleep(2);
+    sleep(1);
 
     if(SANS >= 5 / 10){
     printf("Magarayi sen de gordun mu?\n");
     sleep(1);
+    system("cls");
+while(1){
     printf("Gitmek ister misin?\n");
     sleep(1);
     printf("1 - Evet\n2 - Hayir\n");
@@ -238,13 +241,14 @@ void vadiyeGit(){
 
     if(choice == 1){
     magarayaGit();
+    break;
 
     }else if(choice == 2){
     system("cls");
 
         if(TOK - 20 < 0){
-        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.");
-        printf("Koy meydanina donuluyor...");
+        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.\n");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         }
@@ -263,24 +267,25 @@ void vadiyeGit(){
         degerYazdir("TOPLAYICILIK",5,TOPLAYICILIK);
         degerYazdir("KARIZMA",3,KARIZMA);
 
-        printf("Koy meydanina donuluyor...");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
+        break;
 
         }else{
         system("cls");
         printf("Boyle bir secenegimiz bulunmamaktadir, tekrar deneyiniz...\n");
         getchar();
         sleep(1);
-        vadiyeGit();
-        }
-
+        system("cls");
+    }
+}
     }else{
     system("cls");
 
         if(TOK - 10 < 0){
-        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.");
-        printf("Koy meydanina donuluyor...");
+        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.\n");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         }
@@ -293,7 +298,7 @@ void vadiyeGit(){
     degerYazdir("KARIZMA",1,KARIZMA);
 
     sleep(1);
-    printf("Koy meydanina donuluyor...");
+    printf("Koy meydanina donuluyor...\n");
     sleep(1);
     showSkillsAndQualification();
     }
@@ -308,34 +313,33 @@ void sifaliBitkiTopla(){
     system("cls");
 
     printf("Sifali bitki araniyor...\n");
-    sleep(2);
+    sleep(1);
 
     system("cls");
     printf("Bugun iyi gunundesin galiba. Sifali bitkiyi bulmak herkese nasip olmaz.\n");
     sleep(1);
     printf("Toplaniyor...\n");
-    sleep(1);
 
     setFeatureValueQuality(&PUAN, PUAN + 10);
     setFeatureValueQuality(&CAN,CAN + 10);
     setFeatureValueQuality(&TOK,TOK + 10);
-    SANS += 1;
+    SANS = SANS + 5.0;
 
     degerYazdir("CAN",10,CAN);
     degerYazdir("PUAN",10,PUAN);
     degerYazdir("TOK",10,TOK);
-    degerYazdir("SANS",1,SANS);
+    degerYazdir("SANS",5,SANS);
     sleep(1);
 
     system("cls");
-    printf("Koy meydanina donuluyor...");
+    printf("Koy meydanina donuluyor...\n");
     sleep(1);
     showSkillsAndQualification();
 
     }else{
         if(TOK - 10 < 0){
-        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.");
-        printf("Koy meydanina donuluyor...");
+        printf("TOKLUK degeri yetersiz! Islem gerceklestirilemez.\n");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         }
@@ -346,7 +350,7 @@ void sifaliBitkiTopla(){
     degerYazdir("TOK",(-10),TOK);
     sleep(1);
     system("cls");
-    printf("Koy meydanina donuluyor...");
+    printf("Koy meydanina donuluyor...\n");
     sleep(1);
     showSkillsAndQualification();
     }
@@ -354,6 +358,7 @@ void sifaliBitkiTopla(){
 
 
 void kesfeCik(){
+    int choice;
     system("cls");
 
     srand(time(NULL));
@@ -367,11 +372,10 @@ void kesfeCik(){
 
     if (choice == 1){
     system("cls");
-
     int temp;
-
     printf("Olamaz,Haydut!\n");
     sleep(1);
+    system("cls");
     printf("OYUNCU CAN: %d\nOYUNCU GUC: %d\nOYUNCU CEVIKLIK: %d\nOYUNCU DAYANIKLILIK: %d\n",CAN,GUC,CEVIKLIK,DAYANIKLILIK);
     showEasyHaydutFeature();
 
@@ -384,22 +388,31 @@ void kesfeCik(){
     i++;
 
     }else if(temp == 2){
+        haydutKacis(&choice);
+    if(CAN == 0 || HAYDUT_CAN == 0)
     haydutKacis(&choice);
+    else
+    showSkillsAndQualification();
     i++;
 
     }else{
-    printf("Hatali giris. Lutfen gecerli bir deger giriniz.");
+    printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
+    getchar();
+    sleep(1);
+    system("cls");
+    printf("OYUNCU CAN: %d\nOYUNCU GUC: %d\nOYUNCU CEVIKLIK: %d\nOYUNCU DAYANIKLILIK: %d\n\n",CAN,GUC,CEVIKLIK,DAYANIKLILIK);
+    showHardHaydutFeature();
     }
    }
     savasSonuc();
 
     }else if (choice == 2){
-    system("cls");
 
     int temp;
 
     printf("Olamaz,Haydut!\n");
     sleep(1);
+    system("cls");
     printf("OYUNCU CAN: %d\nOYUNCU GUC: %d\nOYUNCU CEVIKLIK: %d\nOYUNCU DAYANIKLILIK: %d\n\n",CAN,GUC,CEVIKLIK,DAYANIKLILIK);
     showMediumHaydutFeature();
 
@@ -413,23 +426,31 @@ void kesfeCik(){
 
     }else if(temp == 2){
         haydutKacis(&choice);
-        i++;
+    if(CAN == 0 || HAYDUT_CAN == 0)
+    haydutKacis(&choice);
+    else
+    showSkillsAndQualification();
+    i++;
 
     }else{
-        printf("Hatali giris. Lutfen gecerli bir deger giriniz.");
+        printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
+        getchar();
+        sleep(1);
+        system("cls");
+        printf("OYUNCU CAN: %d\nOYUNCU GUC: %d\nOYUNCU CEVIKLIK: %d\nOYUNCU DAYANIKLILIK: %d\n\n",CAN,GUC,CEVIKLIK,DAYANIKLILIK);
+        showHardHaydutFeature();
     }
    }
     savasSonuc();
 
     }else if (choice == 3){
-    system("cls");
 
     int temp;
 
     printf("Olamaz,Haydut!\n");
     sleep(1);
     for(int i = 0; i == 0 ;){
-
+    system("cls");
     printf("OYUNCU CAN: %d\nOYUNCU GUC: %d\nOYUNCU CEVIKLIK: %d\nOYUNCU DAYANIKLILIK: %d\n\n",CAN,GUC,CEVIKLIK,DAYANIKLILIK);
     showHardHaydutFeature();
 
@@ -441,20 +462,34 @@ void kesfeCik(){
     i++;
 
     }else if(temp == 2){
+        haydutKacis(&choice);
+    if(CAN == 0 || HAYDUT_CAN == 0)
     haydutKacis(&choice);
+    else
+    showSkillsAndQualification();
     i++;
 
     }else{
-    printf("Hatali giris. Lutfen gecerli bir deger giriniz.");
+    printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
+    getchar();
     sleep(1);
     system ("cls");
     }
    }
     savasSonuc();
 
-    }else{
-    printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+    }
+    else if(choice == 4){
+        printf("Ana menuye donuluyor...\n");
+        sleep(1);
+        system("cls");
+        showSkillsAndQualification();
+    }
+
+    else{
+    printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.\n");
     getchar();
+    sleep(1);
     system("cls");
     kesfeCik();
     }
@@ -462,7 +497,7 @@ void kesfeCik(){
 
 void savasSonuc(){
 
-    if (CAN > HAYDUT_CAN) {
+    if (HAYDUT_CAN == 0) {
     printf("\n");
     printf(" ##  ##   ####   ######   ####   ##  ##  #####   ######  ##  ## \n");
     printf(" ## ##   ##  ##     ##   ##  ##  ### ##  ##  ##    ##    ### ## \n");
@@ -473,7 +508,7 @@ void savasSonuc(){
     printf("Koy meydanina donuluyor...");
     showSkillsAndQualification();
 
-    }else {
+    }else if (CAN == 0) {
     printf("\nHaydut savasi kazandi!\n");
     printf("  ####   ##      #####   ##  ##  ##  ## \n");
     printf(" ##  ##  ##      ##  ##  ##  ##  ### ## \n");
@@ -486,6 +521,7 @@ void savasSonuc(){
 }
 
 void maceraciMenu(){
+    int choice;
 
     system("cls");
 

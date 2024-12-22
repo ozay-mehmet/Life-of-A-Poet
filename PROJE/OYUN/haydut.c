@@ -78,6 +78,7 @@ void showHardHaydutFeature(){
 
 
 void haydutSavas(int *hardship){
+    srand(time(NULL));
 
     float verilenHasar = 4 *GUC;
     float alinanHasar = verilenHasar - (verilenHasar * (DAYANIKLILIK/25) - 1);
@@ -130,8 +131,11 @@ void haydutSavas(int *hardship){
             break;
 
         while(1){
+        system("cls");
+        printf("OYUNCU CAN: %d\nHAYDUT CAN: %d\n",CAN,HAYDUT_CAN);
         printf("Tamam mi devam mi?\n");
-        printf("1 - Savas\n2 - Kac");
+        printf("1 - Savas\n2 - Kac\n");
+        printf("Secim:");
         scanf("%d" , &savasSecim);
         if(savasSecim == 1){
         printf("Hadi yenelim sunu!");
@@ -149,10 +153,11 @@ void haydutSavas(int *hardship){
         break;
         }
         else{
-        printf("HATALI GÝRÝS! Lutfen gecerli bir deger giriniz.");
+        printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
         getchar();
         sleep(1);
         system("cls");
+        printf("OYUNCU CAN: %d\nHAYDUT CAN: %d\n",CAN,HAYDUT_CAN);
         }
       }
       if(savasSecim == 2)
@@ -193,8 +198,11 @@ void haydutSavas(int *hardship){
             break;
 
         while(1){
+        system("cls");
+        printf("OYUNCU CAN: %d\nHAYDUT CAN: %d\n",CAN,HAYDUT_CAN);
         printf("Tamam mi devam mi?\n");
-        printf("1 - Savas\n2 - Kac");
+        printf("1 - Savas\n2 - Kac\n");
+        printf("Secim:");
         scanf("%d" , &savasSecim);
         if(savasSecim == 1){
         printf("Hadi yenelim sunu!");
@@ -212,10 +220,11 @@ void haydutSavas(int *hardship){
         break;
         }
         else{
-            printf("HATALI GÝRÝS! Lutfen gecerli bir deger giriniz.");
+            printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
             getchar();
             sleep(1);
             system("cls");
+
         }
     }
     if(savasSecim == 2)
@@ -259,8 +268,11 @@ void haydutSavas(int *hardship){
         break;
 
         while(1){
+        system("cls");
+        printf("OYUNCU CAN: %d\nHAYDUT CAN: %d\n",CAN,HAYDUT_CAN);
         printf("Tamam mi devam mi?\n");
-        printf("1 - Savas\n2 - Kac");
+        printf("1 - Savas\n2 - Kac\n");
+        printf("Secim:");
         scanf("%d" , &savasSecim);
         if(savasSecim == 1){
         printf("Hadi yenelim sunu!");
@@ -268,17 +280,17 @@ void haydutSavas(int *hardship){
         }
         else if(savasSecim == 2){
         system("cls");
-        printf("\"HAHAHAHA! Kac bakalim. \"");
+        printf("\"HAHAHAHA! Kac bakalim. \"\n");
         setFeatureValueSkills(&KARIZMA , KARIZMA - 2);
         degerYazdir("KARIZMA",(-2),KARIZMA);
         sleep(1);
-        printf("Koy meydanina donuluyor...");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         break;
         }
         else{
-            printf("HATALI GÝRÝS! Lutfen gecerli bir deger giriniz.");
+            printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
             getchar();
             sleep(1);
             system("cls");
@@ -322,26 +334,29 @@ void haydutSavas(int *hardship){
         if(CAN == 0 || HAYDUT_CAN == 0)
             break;
         while(1){
+        system("cls");
+        printf("OYUNCU CAN: %d\nHAYDUT CAN: %d\n",CAN,HAYDUT_CAN);
         printf("Tamam mi devam mi?\n");
-        printf("1 - Savas\n2 - Kac");
+        printf("1 - Savas\n2 - Kac\n");
+        printf("Secim:");
         scanf("%d" , &savasSecim);
         if(savasSecim == 1){
-        printf("Hadi yenelim sunu!");
+        printf("Hadi yenelim sunu!\n");
         break;
         }
         else if(savasSecim == 2){
         system("cls");
-        printf("\"HAHAHAHA! Kac bakalim. \"");
+        printf("\"HAHAHAHA! Kac bakalim. \"\n");
         setFeatureValueSkills(&KARIZMA , KARIZMA - 2);
         degerYazdir("KARIZMA",(-2),KARIZMA);
         sleep(1);
-        printf("Koy meydanina donuluyor...");
+        printf("Koy meydanina donuluyor...\n");
         sleep(1);
         showSkillsAndQualification();
         break;
         }
         else{
-            printf("HATALI GÝRÝS! Lutfen gecerli bir deger giriniz.");
+            printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRIN.");
             getchar();
             sleep(1);
             system("cls");
@@ -366,7 +381,8 @@ void haydutKacis(int *hardship){
     float kacmaSans = 4 * (CEVIKLIK / 100);
 
     if(kacmaSans > rand()%100){
-    printf("Kacmayi basardin.\nKoy meydanina donuluyor...");
+    system("cls");
+    printf("Kacmayi basardin.\nKoy meydanina donuluyor...\n");
     sleep(1);
     showSkillsAndQualification();
 

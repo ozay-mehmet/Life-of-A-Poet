@@ -38,9 +38,11 @@ while(1){
 
     if (choice == 1){
     yara_sar();
+    break;
 
     }else if (choice == 2){
     merhem_sur();
+    break;
 
     }else if (choice == 3){
     system("cls");
@@ -60,9 +62,14 @@ while(1){
 
 void yara_sar() {
 
-    if(CAN > 90){
-    printf("CAN degeri %d`in uzerinde", 90);
-    sifaciMenu();
+    if(CAN > 80){
+    system("cls");
+    printf("CAN degeri %d`in uzerinde\n", 80);
+    sleep(1);
+    printf("Koy meydanina donuluyor...\n");
+    sleep(1);
+    showSkillsAndQualification();
+    return;
     }
 
     int sayi = rand() % 10;
@@ -78,15 +85,19 @@ void yara_sar() {
     degerYazdir("SAGLIK",10,SAGLIK);
     degerYazdir("MUTLULUK",10,MUTLULUK);
     sleep(1);
-
-    sifaciMenu();
+    showSkillsAndQualification();
 }
 
 void merhem_sur(){
 
     if(CAN > 90){
-    printf("CAN degeri %d`in uzerinde", 90);
-    sifaciMenu();
+    system("cls");
+    printf("CAN degeri %d`in uzerinde\n", 90);
+    sleep(1);
+    printf("Koy meydanina donuluyor...");
+    sleep(1);
+    showSkillsAndQualification();
+    return;
     }
 
     int sayi = rand() % 10;
@@ -103,7 +114,6 @@ void merhem_sur(){
     degerYazdir("SAGLIK",5,SAGLIK);
     degerYazdir("MUTLULUK",5,MUTLULUK);
     sleep(1);
-
-    sifaciMenu();
+    showSkillsAndQualification();
 }
 

@@ -23,12 +23,15 @@ while(1){
 
     if(choice == 1){
     sarkiSoyle();
+    break;
 
     }else if(choice == 2){
     nehirdeYikan();
+    break;
 
     }else if(choice == 3){
     cadirdaUyu();
+    break;
 
     }else if(choice == 4){
     system("cls");
@@ -41,13 +44,16 @@ while(1){
     printf("HATALI GIRIS! Lutfen gecerli bir deger giriniz.\n");
     getchar();
     sleep(1);
+
     }
   }
 }
 
 void sarkiSoyle(){
-    system("cls");
     int song;
+while(1)
+{
+    system("cls");
 
     printf("1 - Bu aksam\n2 - Aman aman\n3 - Senden daha guzel\n4 - Vazgec\n");
     printf("Ne soyleyelim : ");
@@ -67,6 +73,8 @@ void sarkiSoyle(){
     degerYazdir("KARIZMA",1,KARIZMA);
     sleep(1);
     kampciMenu();
+    break;
+
 
     }else if(song == 2){
     system("cls");
@@ -82,6 +90,7 @@ void sarkiSoyle(){
     degerYazdir("KARIZMA",1,KARIZMA);
     sleep(1);
     kampciMenu();
+    break;
 
     }else if(song == 3){
     system("cls");
@@ -97,6 +106,7 @@ void sarkiSoyle(){
     degerYazdir("KARIZMA",1,KARIZMA);
     sleep(1);
     kampciMenu();
+    break;
 
     }else if(song == 4){
         if(KARIZMA - 1 < 0){
@@ -105,6 +115,7 @@ void sarkiSoyle(){
         printf("Koy meydanina donuluyor...");
         sleep(1);
         showSkillsAndQualification();
+        break;
         }
     system("cls");
     printf("Senden beklemezdim (!)\n");
@@ -112,14 +123,14 @@ void sarkiSoyle(){
     degerYazdir("KARIZMA",(-1),KARIZMA);
     sleep(1);
     kampciMenu();
+    break;
 
     }else{
     printf("HATALI GIRIS! Lutfen gecerli bir deger giriniz.\n");
     getchar();
     sleep(1);
-    sarkiSoyle();
     }
-
+  }
 }
 
 void nehirdeYikan(){
@@ -127,12 +138,11 @@ void nehirdeYikan(){
     setFeatureValueQuality(&HIJYEN, HIJYEN + 10);
     setFeatureValueQuality(&MUTLULUK, MUTLULUK + 10);
     printf("Haydi temizlenelim!\n");
-    sleep(1);
 
     degerYazdir("HIJYEN",10,HIJYEN);
     degerYazdir("MUTLULUK",10,MUTLULUK);
     sleep(1);
-    kampciMenu();
+    showSkillsAndQualification();
 }
 
 void cadirdaUyu(){
@@ -140,11 +150,10 @@ void cadirdaUyu(){
     setFeatureValueQuality(&UYKU, UYKU + 50);
     setFeatureValueSkills(&GUC , GUC + 2);
     printf("Uyku vakti!\n");
-    sleep(1);
 
     degerYazdir("UYKU",50,UYKU);
     degerYazdir("GUC",2,GUC);
     sleep(1);
-    kampciMenu();
+    showSkillsAndQualification();
 }
 

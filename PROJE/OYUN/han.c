@@ -10,7 +10,6 @@
 #include "degerYazdir.h"
 
 
-int choice;
 char han_yemek_yazi[8][100] = {
     "Yemek cok lezzetliydi. Kendimi daha iyi hissediyorum.",
     "Midem doydu ve simdi daha enerjik hissediyorum.",
@@ -46,6 +45,7 @@ char sarki_sozu[8][100] = {
 
 
 void yemekYe(){
+    int choice;
     srand(time(NULL));
     system("cls");
 
@@ -64,6 +64,7 @@ void yemekYe(){
 
         if(ALTIN - 20 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -85,13 +86,14 @@ void yemekYe(){
         degerYazdir("TOK",30,TOK);
 
         sleep(2);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
     }else if (choice == 2){
         system("cls");
             if(ALTIN - 15 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -111,13 +113,14 @@ void yemekYe(){
         degerYazdir("MUTLULUK",20, MUTLULUK);
         degerYazdir("TOK",25, TOK);
         sleep(1);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
     }else if (choice == 3){
         system("cls");
         if(ALTIN - 10 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -136,7 +139,7 @@ void yemekYe(){
         degerYazdir("MUTLULUK",20, MUTLULUK);
         degerYazdir("TOK",25, TOK);
         sleep(1);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
     }else if(choice == 4){
@@ -147,16 +150,17 @@ void yemekYe(){
         break;
 
     }else{
-        system("cls");
-        printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+        printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRINIZ.\n");
         getchar();
         sleep(1);
+        system("cls");
     }
   }
 }
 
 void icecekIc(){
     system("cls");
+    int choice;
 
     for(int i = 0 ; i == 0;){
 
@@ -174,6 +178,7 @@ void icecekIc(){
 
         if(ALTIN - 20 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -196,13 +201,14 @@ void icecekIc(){
         degerYazdir("MUTLULUK",20, MUTLULUK);
         degerYazdir("TOK",20, TOK);
         sleep(1);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
     }else if (choice == 2){
         system("cls");
         if(ALTIN - 10 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -225,7 +231,7 @@ void icecekIc(){
         degerYazdir("MUTLULUK",20, MUTLULUK);
         degerYazdir("TOK",15,TOK);
         sleep(1);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
     }else if (choice == 3){
@@ -233,6 +239,7 @@ void icecekIc(){
 
         if(ALTIN - 5 < 0){
             printf("ALTIN degeri yetersiz! Islem gerceklestirilemez.\n");
+            sleep(1);
             printf("Koy meydanina donuluyor...");
             sleep(1);
             showSkillsAndQualification();
@@ -254,10 +261,10 @@ void icecekIc(){
         degerYazdir("MUTLULUK",20, MUTLULUK);
         degerYazdir("TOK",10, TOK);
         sleep(1);
-        hanciMenu();
+        showSkillsAndQualification();
         break;
 
-    }else if("choice == 4"){
+    }else if(choice == 4){
         system("cls");
         printf("Sonra gorusuruz.");
         sleep(1);
@@ -265,9 +272,10 @@ void icecekIc(){
         break;
 
     }else{
-        printf("Yanlis secim yaptiniz. Lutfen tekrar deneyiniz.\n");
+        printf("HATALI GIRIS! LUTFEN GECERLI BIR DEGER GIRINIZ.\n");
         getchar();
         sleep(1);
+        system("cls");
     }
   }
 }
@@ -276,14 +284,13 @@ void enstrumanCal(){
     system("cls");
 
         if(TOK - 10 < 0){
-        system("cls");
         printf("TOK degeri yetersiz! Islem gerceklestirilemez.\n");
+        sleep(1);
         printf("Koy meydanina donuluyor...");
         sleep(1);
         showSkillsAndQualification();
 
         }else if(HIJYEN - 10 < 0){
-        system("cls");
         printf("HIJYEN degeri yetersiz! Islem gerceklestirilemez.\n");
         printf("Koy meydanina donuluyor...");
         sleep(1);
@@ -299,18 +306,19 @@ void enstrumanCal(){
     int sayi = rand() % 8 + 1;
     printf("%s\n",sarki_sozu[sayi]);
 
-    degerYazdir("ALTIN",10 + (KARIZMA * (HIJYEN/100)), ALTIN );
     degerYazdir("PUAN",20, PUAN);
     degerYazdir("MUTLULUK",20, MUTLULUK);
     degerYazdir("HIJYEN",(-10), HIJYEN);
     degerYazdir("TOK",(-10), TOK);
 
+    printf("Koy meydanina donuluyor...");
     sleep(1);
-    hanciMenu();
+    showSkillsAndQualification();
 }
 
 void hanciMenu(){
     system("cls");
+    int choice;
 
     printf("---- HAN -----\n");
     printf("1 - Yiyecek satin al ve ye\n");

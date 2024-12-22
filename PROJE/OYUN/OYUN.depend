@@ -1,0 +1,157 @@
+# depslib dependency file v1.0
+1734800983 source:c:\users\enes\desktop\proje\oyun\ayi.c
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<stdlib.h>
+	<time.h>
+	"features.h"
+	"menu.h"
+	"degerYazdir.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\features.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\menu.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\degeryazdir.h
+
+1734800983 source:c:\users\enes\desktop\proje\oyun\degeryazdir.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	"han.h"
+
+1734800579 c:\users\enes\desktop\proje\oyun\han.h
+
+1734817212 source:c:\users\enes\desktop\proje\oyun\features.c
+	<stdio.h>
+	<string.h>
+	"features.h"
+
+1734820585 source:c:\users\enes\desktop\proje\oyun\han.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<time.h>
+	"menu.h"
+	"features.h"
+	"han.h"
+	"puan.h"
+	"degerYazdir.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\puan.h
+
+1734824061 source:c:\users\enes\desktop\proje\oyun\haydut.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<time.h>
+	"menu.h"
+	"haydut.h"
+	"features.h"
+	"degerYazdir.h"
+	"macera.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\haydut.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\macera.h
+
+1734818941 source:c:\users\enes\desktop\proje\oyun\kamp.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	"kamp.h"
+	"features.h"
+	"degerYazdir.h"
+	"menu.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\kamp.h
+
+1734800983 source:c:\users\enes\desktop\proje\oyun\level.c
+	<stdio.h>
+	<stdlib.h>
+	"puan.h"
+
+1734825116 source:c:\users\enes\desktop\proje\oyun\macera.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<unistd.h>
+	"macera.h"
+	"features.h"
+	"haydut.h"
+	"ayi.h"
+	"menu.h"
+	"degerYazdir.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\ayi.h
+
+1734823020 source:c:\users\enes\desktop\proje\oyun\main.c
+	<stdio.h>
+	<unistd.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"level.h"
+	"yoldas.h"
+	"puan.h"
+	"features.h"
+	"ayi.h"
+	"kamp.h"
+	"han.h"
+	"sifahane.h"
+	"macera.h"
+	"haydut.h"
+	"menu.h"
+	"yoldasMenu.h"
+
+1734800983 c:\users\enes\desktop\proje\oyun\level.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\yoldas.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\sifahane.h
+
+1734800983 c:\users\enes\desktop\proje\oyun\yoldasmenu.h
+
+1734800786 source:c:\users\enes\desktop\proje\oyun\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"features.h"
+	"yoldas.h"
+
+1734819806 source:c:\users\enes\desktop\proje\oyun\sifahane.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<time.h>
+	"sifahane.h"
+	"features.h"
+	"menu.h"
+	"degerYazdir.h"
+
+1734800960 source:c:\users\enes\desktop\proje\oyun\yoldasmenu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"yoldas.h"
+	"features.h"
+	"menu.h"
+
+1734801038 source:c:\users\enes\desktop\proje\oyun\puan.c
+	<stdio.h>
+	<unistd.h>
+	"features.h"
+	"yoldas.h"
+	"puan.h"
+
+1734801213 source:c:\users\enes\desktop\proje\oyun\yoldas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
